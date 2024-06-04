@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tip Calculator-BY NIDHI UPMAN</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <p>Bill ₹</p>
+                <input id="amount" type="number" placeholder="Amount to be paid">
+
+                <p>Select Tip %</p>
+                <div class="tips">
+                    <div class="tip">5%</div>
+                    <div class="tip">15%</div>
+                    <div class="tip">20%</div>
+                    <div class="tip">25%</div>
+                    <div class="tip">50%</div>
+                </div>
+
+                <p>Number of People</p>
+                <input id="people" type="number" placeholder="Number of people sharing the bill">
+                <button id="calculate">Calculate</button>
+            </div>
+            <div class="right-wrapper">
+                <p>Tip Amount: ₹<span id="tipamount">0</span><span> each</span></p>
+                <p>Total: ₹<span id="totalamount">0</span><span> each</span></p>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </body> 
+</html>

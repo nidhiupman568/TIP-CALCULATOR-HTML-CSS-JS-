@@ -8,6 +8,8 @@ Welcome to the **Tip Calculator** project! 🎉 This practical tool helps you qu
 
 The **Tip Calculator** computes the tip amount based on the bill total and the selected tip percentage. It provides you with the total bill including the tip, making it easier to split bills or manage expenses at restaurants and cafes. It’s perfect for anyone who wants to quickly calculate tips without hassle. 🍽️
 
+In this project, we will build a tip calculator which takes the billing amount, type of service, and the number of persons as input. You can choose the percentage of tip you want to give and can calculate the tip per person.
+
 ## 🛠️ Built With
 
 - **HTML**: For creating the structure of the calculator interface.

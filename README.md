@@ -1,8 +1,10 @@
-Absolutely, here's the enhanced description with more emojis:
+
 
 # 💰 Tip Calculator Project 💰
 
 🎉 Welcome to the **Tip Calculator** project! 🎉 This practical tool helps you quickly calculate the tip amount and total bill after adding a tip percentage. Built with **HTML** 📝, **CSS** 🎨, and **JavaScript** 💻, this calculator simplifies the process of determining tips. 💰
+
+Project Demo: https://nidhiupman568.github.io/TIP-CALCULATOR-HTML-CSS-JS-/
 
 ## 📋 Description
 

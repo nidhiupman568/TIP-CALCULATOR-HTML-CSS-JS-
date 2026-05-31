@@ -1,42 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Tip Calculator - BY NIDHI UPMAN</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <div>
-            
-            <center>
-              <h1>Tip Calculator - BY NIDHI UPMAN</h1>
-            </center>
-<br>
-<br>
-        <div class="container">
-            <div class="wrapper">
-                <p>Bill ₹</p>
-                <input id="amount" type="number" placeholder="Amount to be paid">
+<html lang="en">
 
-                <p>Select Tip %</p>
-                <div class="tips">
-                    <div class="tip">5%</div>
-                    <div class="tip">15%</div>
-                    <div class="tip">20%</div>
-                    <div class="tip">25%</div>
-                    <div class="tip">50%</div>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator - Enhanced</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
 
-                <p>Number of People</p>
-                <input id="people" type="number" placeholder="Number of people sharing the bill">
-                <button id="calculate">Calculate</button>
+<body>
+    <main class="container">
+        <section class="wrapper">
+            <h1>Tip Calculator</h1>
+
+            <label for="currency">Currency Type</label>
+            <select id="currency">
+                <option value="₹">INR - Indian Rupee (₹)</option>
+                <option value="$">USD - US Dollar ($)</option>
+                <option value="€">EUR - Euro (€)</option>
+                <option value="£">GBP - British Pound (£)</option>
+                <option value="¥">JPY - Japanese Yen (¥)</option>
+                <option value="$">MXN - Mexican Peso ($)</option>
+            </select>
+
+            <label for="amount">Bill Amount</label>
+            <input id="amount" type="number" placeholder="Amount to be paid" min="0" step="0.01">
+
+            <p class="section-label">Select Tip %</p>
+            <div class="tips">
+                <button class="tip" type="button">5%</button>
+                <button class="tip" type="button">15%</button>
+                <button class="tip" type="button">20%</button>
+                <button class="tip" type="button">25%</button>
+                <button class="tip" type="button">50%</button>
             </div>
-            <div class="right-wrapper">
-                <p>Tip Amount: ₹<span id="tipamount">0</span><span> each</span></p>
-                <p>Total: ₹<span id="totalamount">0</span><span> each</span></p>
-                <button id="reset">Reset</button>
-            </div>
-        </div>
-    </div>
-    </body> 
+
+            <label for="customTip">Custom Tip %</label>
+            <input id="customTip" type="number" placeholder="Enter custom tip" min="0" step="0.1">
+
+            <label for="people">Number of People</label>
+            <input id="people" type="number" placeholder="Number of people sharing the bill" min="1" step="1" value="1">
+
+            <button id="calculate" type="button">Calculate</button>
+            <button id="reset" type="button">Reset</button>
+        </section>
+
+        <section class="right-wrapper" aria-live="polite">
+            <p>
+                Tip Amount:
+                <span id="tipCurrency">₹</span><span id="tipamount">0</span>
+                <span class="small-text">each</span>
+            </p>
+
+            <p>
+                Total:
+                <span id="totalCurrency">₹</span><span id="totalamount">0</span>
+                <span class="small-text">each</span>
+            </p>
+        </section>
+    </main>
+</body>
+
 </html>
